@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
+    use HasFactory;
+
     // Definizione degli attributi riempibili del modello
     protected $fillable = [
         'client_id',   // ID del cliente associato all'ordine
